@@ -7,11 +7,7 @@ const myPromise5: Promise<number> = new Promise((resolve) => {
   }, 1000);
 });
 
-myPromise5
-  .then((value: number) => {
-    callback2(value); // log: Esto es un numero: 2
-    return 1;
-  })
-  .then((value: number) => {
-    console.log(value); // log: 1
-  });
+myPromise5.then((value: number) => {
+  callback2(value); // log: Esto es un numero: 2
+  console.log(1);
+});
